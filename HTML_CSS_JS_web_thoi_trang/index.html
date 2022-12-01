@@ -1,0 +1,339 @@
+<html>
+    <head>
+        <meta charset= "utf-8">
+        <meta name ="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title> MoniT </title>
+        <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+        <link rel = "stylesheet" href = "./style.css">
+    </head>
+    <body>
+        <div id = "container">
+            <header>
+                <img class = "logo" src = "./Cut PSD to HTML/Home/images/Home_01.jpg" alt = "logo">
+                <div id = "shopping">
+                    <div class = "icon">
+                        <i class="fa-solid fa-magnifying-glass"></i> &nbsp; &nbsp;
+                        <a href = "./cart.html"> <i class="fa-solid fa-bag-shopping"></i> </a>&nbsp; &nbsp;&nbsp; &nbsp;
+                    </div>
+                    <div class = "account">
+                        <button id="myBtn" >Sign in</button> &nbsp;
+                        <button id="myBtn1" >Sign up</button>
+                    </div>
+                </div>
+            </header>
+            <script>
+                var hover = document.getElementsByTagName("button");
+                for (var i = 0 ; i < hover.length ; i++) {
+                    hover[i].onmousemove = function () {
+                        this.style.backgroundColor = "#395B64";
+                        this.style.color = "white";
+                    };
+                    hover[i].onmouseout = function () {
+                        this.style.backgroundColor = "white";
+                        this.style.color = "black";
+                    };
+                };
+            </script>
+            <form id="frm">
+                <div id="myModal" class="modal">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                    <span class="close">&times;</span>
+                        <div class="avatar">
+                            <img src="./Cut PSD to HTML/Home/images/Home_01.jpg" alt="avatar">
+                        </div>
+                        <div class="modalForm">
+                            <p>Your ID:</p>
+                            <input type="text" class="info" id="taikhoan" placeholder="Enter your email">
+                            <p>Your Password:</p>
+                            <input type="password" class="info" id="matkhau" placeholder="Enter your password">
+                            <div class="button">
+                                <button onclick="checkLogin()">Sign in</button>
+                                <input id="check"  type="checkbox" checked>
+                                <label for="check"> Remember your ID</label>
+                            </div>
+                            <div class="cancel">
+                                <button id="delete">Cancel</button>
+                                <span class="forgot"> Forgot <a href="#">Password?</a></span>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <script>
+                var modal = document.getElementById("myModal");
+                var btn = document.getElementById("myBtn");
+                var huybo = document.getElementById("delete");
+                var span = document.getElementsByClassName("close")[0]
+                btn.onclick = function () {
+                    modal.style.display = "block"; // or "inline"
+                }
+                huybo.onclick = function () {
+                    modal.style.display = "none";
+                }
+                span.onclick = function () {
+                    modal.style.display = "none";
+                }
+            </script>
+            <form id="frm1">
+                <div id="myModal1" class="modal1">
+                    <!-- Modal content -->
+                    <div class="modal-content1">
+                    <span class="close1">&times;</span>
+                        <div class="avatar1">
+                            <img src="./Cut PSD to HTML/Home/images/Home_01.jpg" alt="avatar1">
+                        </div>
+                        <div class="modalForm1">
+                            <p>Your Full Name:</p>
+                            <input type="text" class="info" id="taikhoan" placeholder="Enter your fullname">
+                            <p>Your ID:</p>
+                            <input type="text" class="info" id="taikhoan" placeholder="Enter your email">
+                            <p>Your Password:</p>
+                            <input type="password" class="info" id="matkhau" placeholder="Enter your password">
+                            <p>Confirm Your Password:</p>
+                            <input type="password" class="info" id="matkhau" placeholder="Enter your password">
+                            <div class="button1">
+                                <button>Sign up</button>
+                            </div>
+                            <div class="cancel1">
+                                <button id="delete1">Cancel</button>
+                            </div>
+                            <div class="clear1"></div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <script>
+                var modal1 = document.getElementById("myModal1");
+                var btn1 = document.getElementById("myBtn1");
+                var huybo1 = document.getElementById("delete1");
+                var span1 = document.getElementsByClassName("close1")[0]
+                btn1.onclick = function () {
+                    modal1.style.display = "block"; // or "inline"
+                }
+                huybo1.onclick = function () {
+                    modal1.style.display = "none";
+                }
+                span1.onclick = function () {
+                    modal1.style.display = "none";
+                }
+            </script>  
+            <script>
+                function checkLogin () {
+                    var tendangnhap = document.getElementById("taikhoan").value;
+                    var matkhau = document.getElementById("matkhau").value;
+                    if (tendangnhap != "admin")
+                    alert ("Sai tên đăng nhập!");
+                    else if (matkhau != "123456")
+                    alert ("Sai mật khẩu");
+                    else if (tendangnhap == "admin" && matkhau == "123456")
+                    alert ("Đăng nhập thành công");
+                    else alert ("Lỗi đăng nhập");
+                }
+            </script>
+                <div class="slideshow-container">
+                    <!-- Full-width images with number and caption text -->
+                    <div class="mySlides fade">
+                        <img class = "banner" src="./Cut PSD to HTML/Home/images/Home_05.jpg" style="width:100%">
+                    </div>
+                
+                    <div class="mySlides fade">
+                        <img class = "banner" src="./Cut PSD to HTML/Home/images/banner2.jpeg" style="width:100%">
+                    </div>
+                
+                    <div class="mySlides fade">
+                        <img class = "banner" src="./Cut PSD to HTML/Home/images/banner3.jpeg" style="width:100%">
+                    </div>
+                
+                    <!-- Next and previous buttons -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br>
+                
+                    <!-- The dots/circles -->
+                <div id = "dot">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+
+                <script>
+                    let slideIndex = 1;
+                    showSlides(slideIndex);
+                
+                    // Next/previous controls
+                    function plusSlides(n) {
+                        showSlides(slideIndex += n);
+                    }
+                
+                    // Thumbnail image controls
+                    function currentSlide(n) {
+                        showSlides(slideIndex = n);
+                    }
+                
+                    function showSlides(n) {
+                        let i;
+                        let slides = document.getElementsByClassName("mySlides");
+                        let dots = document.getElementsByClassName("dot");
+                        if (n > slides.length) {slideIndex = 1}
+                        if (n < 1) {slideIndex = slides.length}
+                        for (i = 0; i < slides.length; i++) {
+                            slides[i].style.display = "none";
+                        }
+                        for (i = 0; i < dots.length; i++) {
+                            dots[i].className = dots[i].className.replace(" active", "");
+                        }
+                        slides[slideIndex-1].style.display = "block";
+                        dots[slideIndex-1].className += " active";
+                    }
+                </script>
+            <nav>
+                <div id = "home">
+                    <img class = "home" src = "./Cut PSD to HTML/Home/images/Home_07.jpg" alt = "home">
+                    <div class = "text_home">
+                        <a href = "./index.html"> <span class = "hover"> Home </span> </a>
+                    </div>
+                </div>
+                <div id = "product">
+                    <img class = "product" src = "./Cut PSD to HTML/Home/images/Home_09.jpg" alt = "product">
+                    <div class = "text_product">
+                        <a href = "./product.html"> <span class = "hover"> Product </span> </a>
+                    </div>
+                </div>
+                <div id = "women">
+                    <img class = "women" src = "./Cut PSD to HTML/Home/images/Home_11.jpg" alt = "women's wear">
+                    <div class = "text_women">
+                        <a href = "./women.html"> <span class = "hover"> Women's Wear </span> </a>
+                    </div>
+                </div>
+                <div id = "men">
+                    <img class = "men" src = "./Cut PSD to HTML/Home/images/Home_13.jpg" alt = "men's wear">
+                    <div class = "text_men">
+                        <a href = "./men.html"> <span class = "hover"> Men's Wear </span> </a>
+                    </div>
+                </div>
+            </nav>
+            <div id = "content">
+                <p> “It is both delusional and stupid to think that clothes don’t really matter
+                    and we should all wear whatever we want. 
+                   Most people don’t take clothing seriously enough, 
+                   but whether we should or not, 
+                   clothes do talk to us and we make decisions based on people’s appearances.” </p>
+            </div>
+            <main>
+                <div id = "menu">
+                    <div id = "new_arrivals">
+                        <img class = "new_arrivals" src = "./Cut PSD to HTML/Home/images/Home_21.jpg" alt = "new_arrivals">
+                        <div class = "text_new_arrivals">
+                            <a href = "#"> <span class = "hover"> New Arrivals </span> </a>
+                        </div>
+                    </div>
+                    <div id = "accessories">
+                        <img class = "accessories" src = "./Cut PSD to HTML/Home/images/Home_36.jpg" alt = "accessories">
+                        <div class = "text_accessories">
+                            <a href = "#"> <span class = "hover"> Accessories </span> </a>
+                        </div>
+                    </div>
+                    <div id = "promotion">
+                        <img class = "promotion" src = "./Cut PSD to HTML/Home/images/Home_38.jpg" alt = "promotion">
+                        <div class = "text_promotion">
+                            <a href = "#"> <span class = "hover"> Promotion </span> </a>
+                        </div>
+                    </div>
+                </div>
+                <script>
+                    var hover = document.getElementsByClassName("hover")
+                    for (var i = 0 ; i < hover.length ; i++) {
+                        hover[i].onmousemove = function () {
+                            this.style.backgroundColor = "#A7D129";
+                            this.style.color = "white";
+                        };
+                        hover[i].onmouseout = function () {
+                            this.style.backgroundColor = "white";
+                            this.style.color = "black";
+                        };
+                    };
+                </script>
+                <div id = "collection">
+                    <h3> C O L L E C T I O N </h3>
+                    <div id = "detail_collection">
+                        <div id = "detail_collection_1">
+                            <div id = "spring">
+                                <img class = "spring" src = "./Cut PSD to HTML/Home/images/Home_27.jpg" alt = "spring">
+                                <div class = "text_spring">
+                                    <a href = "#"> Spring </a>
+                                </div>
+                            </div>
+                            <div id = "summer">
+                                <img class = "summer" src = "./Cut PSD to HTML/Home/images/Home_29.jpg" alt = "summer">
+                                <div class = "text_summer">
+                                    <a href = "#"> Summer </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div id = "detail_collection_2">
+                            <div id = "autumn">
+                                <img class = "autumn" src = "./Cut PSD to HTML/Home/images/Home_31.jpg" alt = "autumn">
+                                <div class = "text_autumn">
+                                    <a href = "#"> Autumn </a>
+                                </div>
+                            </div>
+                            <div id = "winter">
+                                <img class = "winter" src = "./Cut PSD to HTML/Home/images/Home_33.jpg" alt = "winter">
+                                <div class = "text_winter">
+                                    <a href = "#"> Winter </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p> What is your choice? </p>
+                </div>
+                <!-- <script>
+                    function mouseOver() {
+                        document.getElementById("autumn").style.background = "red";
+                    }
+                    function mouseOut() {
+                        document.getElementById("autumn").style.background = "none";
+                    }
+                    document.getElementById("autumn").addEventListener("mouseover" , mouseOver);
+                    document.getElementById("autumn").addEventListener("mouseout" , mouseOut);
+                </script> -->
+                <div id = "contact">
+                    <div id = "contact_1">
+                        <p> 
+                            FIND US ON <br>
+                            Address: HCM City <br>
+                            Phone Number: &nbsp; &nbsp;
+                            <a href = "tel: 0123456789"> 0123.456.789 </a> <br>
+                            Email Address: &nbsp; &nbsp;
+                            <a href = "mailto: fashion@monit.com"> fashion@monit.com </a>
+                        </p>
+                    </div>
+                    <div id = "contact_2">
+                        <a href = "#"> <i class="fa-brands fa-facebook"></i></a> &nbsp; &nbsp;
+                        <a href = "#"> <i class="fa-brands fa-instagram"></i></a> &nbsp; &nbsp;
+                        <a href = "#"> <i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                    <div id = "contact_3">
+                        <p> 
+                            NEED HELP? <br>
+                            Contact Us <br>
+                            Shipping Services <br>
+                            Payment Options <br>
+                            Product Care <br>
+                            FAQs <br>
+                            Unsubscribe <br>
+                            Sitemap <br>
+                        </p>
+                    </div>
+                </div>
+            </main>
+            <footer>
+                <p> “@2020 All Rights Reversed – Re-design by VU School” </p>
+            </footer>
+        </div>
+    </body>
+</html>

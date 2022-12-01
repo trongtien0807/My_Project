@@ -1,0 +1,1388 @@
+body {
+    background-color: #395B64;
+}
+
+header {
+    background-color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 10px;
+}
+
+.logo {
+    height: 25px;
+    width: 25%;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#shopping {
+    display: flex;
+    flex-direction: row;
+    padding-right: 0;
+    width: 75%;
+    justify-content: right;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.icon a {
+    text-decoration: none;
+    color: black;
+}
+
+.account button {
+    border: 0px;
+    background-color: white;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */  
+    background-color: #000000; /* Fallback color */
+    background-color: #00000066; /* Black w/ opacity */
+  }
+
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: white;
+    margin: 10% auto; /* 15% from the top and centered */
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+    
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    margin-right: 15px;
+    margin-top: 5px;
+  }
+    
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .avatar {
+    text-align: center;
+    margin-left: 40px;
+  }
+  
+  .modalForm {
+    background-color: #E7F6F2;
+    width: 100%;
+    padding-bottom: 20px;
+  }
+  
+  .modalForm p {
+    margin-bottom: 0;
+    padding: 10px;
+    font-size: 12px;
+    font-weight: bold;
+  }
+  
+  .modalForm .info {
+    margin: 5px 10px;
+    width: 95%;
+    height: 30px;
+  }
+  
+  .button {
+    width: 100%;
+    display: inline-block;
+    padding-left: 10px;
+    font-size: 12px;
+  }
+  
+  .button button {
+    background-color: #A7D129;
+    color: white;
+    border: 0px;
+  }
+
+  .cancel {
+    margin-left: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  #delete {
+    float: left;
+    background-color: red;
+    border: 0px;
+  }
+  
+  .forgot {
+    float: right;
+    font-size: 12px;
+    padding-right: 10px;
+  }
+  
+  .clear {
+    clear: both;
+  }
+
+
+  .modal1 {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */  
+    background-color: #000000; /* Fallback color */
+    background-color: #00000066; /* Black w/ opacity */
+  }
+
+  /* Modal Content/Box */
+  .modal-content1 {
+    background-color: white;
+    margin: 10% auto; /* 15% from the top and centered */
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+    
+  /* The Close Button */
+  .close1 {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    margin-right: 15px;
+    margin-top: 5px;
+  }
+    
+  .close1:hover,
+  .close1:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .avatar1 {
+    text-align: center;
+    margin-left: 40px;
+  }
+  
+  .modalForm1 {
+    background-color: #E7F6F2;
+    width: 100%;
+    padding-bottom: 20px;
+  }
+  
+  .modalForm1 p {
+    margin-bottom: 0;
+    padding: 10px;
+    font-size: 12px;
+    font-weight: bold;
+  }
+  
+  .modalForm1 .info {
+    margin: 5px 10px;
+    width: 95%;
+    height: 30px;
+  }
+  
+  .button1 {
+    width: 100%;
+    display: inline-block;
+    padding-left: 10px;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .button1 button {
+    background-color: #A7D129;
+    color: white;
+    height: 40px;
+    width: 50%;
+    border-radius: 1.5em;
+    border: 0px;
+  }
+
+  .cancel1 {
+    margin-left: 131px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  #delete1 {
+    float: left;
+    background-color: red;
+    width: 35%;
+    border: 0px;
+  }
+  
+  .clear1 {
+    clear: both;
+  }
+.banner {
+    height: 200px;
+    width: 100%;
+}
+
+.slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+}
+  
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+#dot {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+nav {
+    background-color: white;
+    height: 540px;
+}
+
+#home {
+    margin: 0px 135px;
+}
+
+.home {
+    height: 60px;
+    width: 90px;
+    margin-top: 20px;
+}
+
+.text_home {
+    margin-top: 7px;
+    padding-left: 23px;
+}
+
+.text_home a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+#product {
+    margin: 10px 142px;
+    margin-top: 10px;
+}
+
+.product {
+    height: 80px;
+    width: 80px;
+    margin-top: 20px;
+}
+
+.text_product {
+    margin-top: 7px;
+    padding-left: 11px;
+}
+
+.text_product a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+#women {
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.women {
+    height: 75px;
+    width: 75px;
+    margin-top: 20px;
+    margin-left: 142px;
+    margin-right: 142px;
+}
+
+.text_women {
+    margin-top: 10px;
+    padding-left: 130px;
+    margin-left: 0px;
+}
+
+.text_women a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+#men {
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.men {
+    height: 75px;
+    width: 75px;
+    margin-top: 20px;
+    margin-left: 142px;
+    margin-right: 142px;
+}
+
+.text_men {
+    margin-top: 10px;
+    padding-left: 137px;
+    margin-left: 0px;
+}
+
+.text_men a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+#content {
+    color: white;
+    text-align: justify;
+    font-size: 0.8em;
+}
+
+#menu {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+}
+
+#new_arrivals {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.new_arrivals {
+    height: 65px;
+    width: 80px;
+    margin-top: 20px;
+    margin-left: 15px;
+    margin-right: 0px;
+}
+
+.text_new_arrivals {
+    margin-top: 5px;
+    padding-left: 4px;
+}
+
+.text_new_arrivals a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+#accessories {
+    margin-top: 15px;
+    margin-bottom: 20px;
+
+}
+
+.accessories {
+    height: 70px;
+    width: 75px;
+    margin-top: 10px;
+    margin-left: 55px;
+    margin-right: 15px;
+}
+
+.text_accessories {
+    margin-top: 10px;
+    padding-left: 53px;
+    margin-left: 0px;
+}
+
+.text_accessories a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+#promotion {
+    margin-top: 15px;
+    margin-left: 5px;
+    margin-right: 20px;
+    margin-top: 28px;
+}
+
+.promotion {
+    height: 70px;
+    width: 75px;
+    margin-right: 20px;
+    margin-left: 30px;
+}
+
+.text_promotion {
+    margin-top: 6px;
+    margin-left: 30px;
+}
+
+.text_promotion a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+#collection {
+    background-color: #E7F6F2;
+    margin-bottom: 0px;
+}
+
+#collection h3 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.7em;
+    font-weight: normal;
+    text-align: center;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    padding-top: 20px;
+}
+
+#collection p {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2em;
+    text-align: center;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    
+}
+
+#detail_collection {
+    display: flex;
+    flex-direction: column;
+}
+
+#detail_collection_1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+#detail_collection_2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    margin-right: 10px;
+}
+
+#spring {
+    margin-top: 0px;
+}
+
+.spring {
+    height: 250px;
+    width: 100px;
+    margin-top: 5px;
+    margin-right: 10px;
+}
+
+.text_spring {
+    margin-top: 10px;
+    padding-left: 28px;
+}
+
+.text_spring a {
+    text-decoration: none;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+}
+
+#summer {
+    margin-top: 0px;
+}
+
+.summer {
+    height: 250px;
+    width: 100px;
+    margin-top: 5px;
+    margin-left: 15px;
+    margin-right: 0px;
+}
+
+.text_summer {
+    margin-top: 10px;
+    padding-left: 30px;
+}
+
+.text_summer a {
+    text-decoration: none;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+}
+
+#autumn {
+    margin-top: 0px;
+}
+
+.autumn {
+    height: 250px;
+    width: 100px;
+    margin-top: 5px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.text_autumn {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.text_autumn a {
+    text-decoration: none;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+}
+
+#winter {
+    margin-top: 0px;
+}
+
+.winter {
+    height: 250px;
+    width: 100px;
+    margin-top: 5px;
+    margin-left: 15px;
+    margin-right: 0px;
+}
+
+.text_winter {
+    margin-top: 10px;
+    padding-left: 35px;
+}
+
+.text_winter a {
+    text-decoration: none;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+}
+
+#contact {
+    background-color: rgb(222, 218, 218);
+    text-align: center;
+}
+
+#contact_1 {
+    margin-top: -20px;
+    padding-top: 5px;
+    font-size: 0.5em;
+    padding-bottom: 10px;
+}
+
+#contact_1 a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+#contact_2 i {
+    font-size: 1.2em;
+    padding-bottom: 10px;
+}
+
+#contact_2 a {
+    color: black;
+}
+
+#contact_3 {
+    display: none;
+}
+
+footer {
+    background-color: black;
+    height: 45px;
+    color: white;
+    text-align: center;
+    font-size: 0.9em;
+    margin-top: 0px;
+    padding-bottom: 2px;
+    padding-top: 1px;
+}
+
+@media only screen and (min-width: 660px) and (max-width: 830px) {
+    body {
+        background:
+        linear-gradient(white, #395B64);
+    }
+    
+    .logo {
+        height: 50px;
+        width: 150px;
+        margin-top: -5px;
+        margin-bottom: 10px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    
+    #shopping {
+        display: flex;
+        flex-direction: row;
+        padding-right: 0;
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+    
+    .modal-content {
+        width: 40%; /* Could be more or less, depending on screen size */
+    }
+
+    .modal-content1 {
+        width: 40%; /* Could be more or less, depending on screen size */
+    }
+
+    .cancel1 {
+        margin-left: 152px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+      
+      #delete1 {
+        float: left;
+        background-color: red;
+        width: 31%;
+      }
+
+    .banner {
+        height: 350px;
+        width: 100%;
+    }
+
+    .dot {
+        height: 15px;
+        width: 15px;
+    }    
+    
+    nav {
+        background-color: white;
+        display: flex;
+        flex-direction: row;
+        height: 140px;
+    }
+    
+    #home {
+        margin-right: 20px;
+        margin-left: 20px;
+        margin-top: -5px;
+        margin-bottom: 20px;
+        width: 25%;
+        justify-content: center;
+    }
+    
+    .home {
+        height: 80px;
+        width: 110px;
+    }
+
+    .text_home {
+        margin-top: 7px;
+        padding-left: 32px;
+    }
+    
+    #product {
+        margin-top: -20px;
+        width: 25%;
+        margin-left: 65px;
+    }
+    
+    .product {
+        height: 100px;
+        width: 100px;
+        margin-top: 20px;
+    }
+    
+    .text_product {
+        margin-top: 2px;
+        padding-left: 20px;
+    }
+    
+    #women {
+        margin-top: -10px;
+        width: 25%;
+        margin-left: -150px;
+    }
+    
+    .women {
+        height: 90px;
+        width: 90px;
+        margin-top: 20px;
+        margin-left: 90px;
+
+    }
+    
+    .text_women {
+        margin-top: 3px;
+        padding-left: 83px;
+        margin-left: 0px;
+    }
+    
+    #men {
+        margin-top: -3px;
+        margin-bottom: 20px;
+        width: 25%;
+        margin-right: 50px;
+    }
+    
+    .men {
+        height: 90px;
+        width: 90px;
+        margin-top: 15px;
+        margin-left: 105px;
+       
+    }
+    
+    .text_men {
+        margin-top: 2px;
+        padding-left: 105px;
+        margin-left: 0px;
+    }
+    
+    #content {
+        background-color: #395B64;
+        color: white;
+        text-align: justify;
+        font-size: 1.2em;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding: 15px;
+    }
+    
+    main {
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto auto auto auto;
+        padding: 0px;
+    }
+
+    #menu {
+        background-color: white;
+        grid-area: 1/1/2/2;
+        display: grid;
+    }
+    
+    #new_arrivals {
+        margin-top: 10px;
+    }
+    
+    .new_arrivals {
+        height: 80px;
+        width: 100px;
+        margin-top: 20px;
+        margin-left: 40px;
+    }
+    
+    .text_new_arrivals {
+        margin-top: 5px;
+        padding-left: 45px;
+    }
+    
+    #accessories {
+        margin-top: 20px;
+    }
+    
+    .accessories {
+        height: 90px;
+        width: 95px;
+        margin-top: 20px;
+        margin-left: 40px;
+    }
+    
+    .text_accessories {
+        margin-top: 10px;
+        padding-left: 50px;
+    }
+
+    #promotion {
+        margin-top: 10px;
+    }
+    
+    .promotion {
+        height: 80px;
+        width: 100px;
+        margin-top: 20px;
+        margin-left: 30px;
+    }
+    
+    .text_promotion {
+        margin-top: 5px;
+        padding-left: 20px;
+        padding-bottom: 20px;
+    }
+    
+    #collection {
+        background-color: #E7F6F2;
+        grid-area: 1/2/2/11;
+    }
+    
+    #collection h3 {
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 1.7em;
+        font-weight: normal;
+        text-align: center;
+        margin-top: 10px;
+        padding-bottom: 0px;
+        padding-top: 20px;
+    }
+    
+    #collection p {
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 1.2em;
+        text-align: center;
+        margin-top: 20px;
+        padding-bottom: 10px;
+        
+    }
+    
+    #detail_collection {
+        display: flex;
+        flex-direction: row;
+        width: 25%;
+    }
+    
+    #detail_collection_1 {
+        display: flex;
+        flex-direction: row;
+        margin-left: 20px;
+        margin-bottom: 20px;
+        margin-right: 15px;
+    }
+    
+    #detail_collection_2 {
+        display: flex;
+        flex-direction: row;
+        margin-left: 0px;
+    }
+    
+    #spring {
+        margin-top: 0px;
+    }
+    
+    .spring {
+        height: 300px;
+        width: 120px;
+        margin-top: 5px;
+        margin-right: 5px;
+    }
+    
+    .text_spring {
+        margin-top: 10px;
+        padding-left: 35px;
+    }
+    
+    .summer {
+        height: 300px;
+        width: 120px;
+        margin-top: 5px;
+        margin-left: 12px;
+        margin-right: 0px;
+    }
+    
+    .text_summer {
+        margin-top: 10px;
+        padding-left: 36px;
+    }
+    
+    .autumn {
+        height: 300px;
+        width: 120px;
+        margin-top: 5px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    
+    .text_autumn {
+        margin-top: 10px;
+        padding-left: 25px;
+    }
+    
+    .winter {
+        height: 300px;
+        width: 120px;
+        margin-top: 5px;
+        margin-left: 17px;
+    }
+    
+    .text_winter {
+        margin-top: 10px;
+        padding-left: 45px;
+    }
+     
+    #contact {
+        background-color: rgb(222, 218, 218);
+        text-align: center;
+        grid-column: 1/11;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    #contact_1 {
+        margin-top: 40px;
+        font-size: 0.8em;
+        text-align: left;
+        margin-left: 20px;
+    }
+    
+    #contact_1 a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+    }
+    
+    #contact_2 {
+        margin-top: 80px;
+        margin-left: 125px;
+        margin-right: 150px;
+    }
+
+    #contact_2 i {
+        font-size: 1.5em;
+        padding-bottom: 10px;
+    }
+
+    #contact_3 {
+        display: inline;
+        text-align: left;
+        margin-right: 20px;
+    }
+}
+
+@media only screen and (min-width: 830px) {
+    body {
+        background:
+        linear-gradient(white, #395B64);
+        width: 90%;
+    }
+    
+    .logo {
+        height: 50px;
+        width: 150px;
+        margin-top: -5px;
+        margin-bottom: 10px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    
+    #shopping {
+        display: flex;
+        flex-direction: row;
+        margin-left: 50px;
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+    
+    .banner {
+        height: 450px;
+        width: 100%;
+    }
+
+    .modal-content {
+        width: 40%; /* Could be more or less, depending on screen size */
+    }
+
+    .modal-content1 {
+        width: 40%; /* Could be more or less, depending on screen size */
+    }
+
+    .cancel1 {
+        margin-left: 184px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+      
+      #delete1 {
+        float: left;
+        background-color: red;
+        width: 27%;
+      }
+
+    .dot {
+        height: 15px;
+        width: 15px;
+    }   
+
+    nav {
+        background-color: white;
+        display: flex;
+        flex-direction: row;
+        height: 140px;
+    }
+    
+    #home {
+        margin-right: 30px;
+        margin-left: 70px;
+        margin-top: -5px;
+        margin-bottom: 20px;
+        width: 25%;
+        justify-content: center;
+    }
+    
+    .home {
+        height: 80px;
+        width: 110px;
+    }
+
+    .text_home {
+        margin-top: 7px;
+        padding-left: 32px;
+    }
+    
+    #product {
+        margin-top: -20px;
+        width: 25%;
+        margin-left: 65px;
+    }
+    
+    .product {
+        height: 100px;
+        width: 100px;
+        margin-top: 20px;
+    }
+    
+    .text_product {
+        margin-top: 2px;
+        padding-left: 20px;
+    }
+    
+    #women {
+        margin-top: -10px;
+        width: 25%;
+        margin-left: -150px;
+    }
+    
+    .women {
+        height: 90px;
+        width: 90px;
+        margin-top: 20px;
+        margin-left: 110px;
+
+    }
+    
+    .text_women {
+        margin-top: 3px;
+        padding-left: 110px;
+        margin-left: 0px;
+    }
+    
+    #men {
+        margin-top: -3px;
+        margin-bottom: 20px;
+        width: 25%;
+        margin-right: 50px;
+    }
+    
+    .men {
+        height: 90px;
+        width: 90px;
+        margin-top: 15px;
+        margin-left: 105px;
+       
+    }
+    
+    .text_men {
+        margin-top: 2px;
+        padding-left: 105px;
+        margin-left: 0px;
+    }
+    
+    #content {
+        background-color: #395B64;
+        color: white;
+        text-align: justify;
+        font-size: 1.3em;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding: 15px;
+    }
+    
+    main {
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto auto auto auto;
+        padding: 0px;
+    }
+
+    #menu {
+        background-color: white;
+        grid-area: 1/1/2/2;
+        display: grid;
+    }
+    
+    #new_arrivals {
+        margin-top: 10px;
+    }
+    
+    .new_arrivals {
+        height: 80px;
+        width: 100px;
+        margin-top: 20px;
+        margin-left: 40px;
+    }
+    
+    .text_new_arrivals {
+        margin-top: 5px;
+        padding-left: 45px;
+    }
+    
+    #accessories {
+        margin-top: 20px;
+    }
+    
+    .accessories {
+        height: 90px;
+        width: 95px;
+        margin-top: 20px;
+        margin-left: 40px;
+    }
+    
+    .text_accessories {
+        margin-top: 10px;
+        padding-left: 50px;
+    }
+
+    #promotion {
+        margin-top: 10px;
+    }
+    
+    .promotion {
+        height: 80px;
+        width: 100px;
+        margin-top: 20px;
+        margin-left: 30px;
+    }
+    
+    .text_promotion {
+        margin-top: 5px;
+        padding-left: 20px;
+        padding-bottom: 20px;
+    }
+    
+    #collection {
+        background-color: #E7F6F2;
+        grid-area: 1/2/2/11;
+    }
+    
+    #collection h3 {
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 1.7em;
+        font-weight: normal;
+        text-align: center;
+        margin-top: 10px;
+        padding-bottom: 0px;
+        padding-top: 20px;
+    }
+    
+    #collection p {
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 1.2em;
+        text-align: center;
+        margin-top: 20px;
+        padding-bottom: 10px;
+        
+    }
+    
+    #detail_collection {
+        display: flex;
+        flex-direction: row;
+        width: 25%;
+    }
+    
+    #detail_collection_1 {
+        display: flex;
+        flex-direction: row;
+        margin-left: 40px;
+        margin-bottom: 20px;
+        margin-right: 30px;
+    }
+    
+    #detail_collection_2 {
+        display: flex;
+        flex-direction: row;
+        margin-left: 0px;
+    }
+    
+    #spring {
+        margin-top: 0px;
+    }
+    
+    .spring {
+        height: 300px;
+        width: 120px;
+        margin-top: 5px;
+        margin-right: 45px;
+    }
+    
+    .text_spring {
+        margin-top: 10px;
+        padding-left: 35px;
+    }
+    
+    .summer {
+        height: 300px;
+        width: 120px;
+        margin-top: 5px;
+        margin-left: 15px;
+        margin-right: 20px;
+    }
+    
+    .text_summer {
+        margin-top: 10px;
+        padding-left: 36px;
+    }
+    
+    .autumn {
+        height: 300px;
+        width: 120px;
+        margin-top: 5px;
+        margin-left: 5px;
+        margin-right: 20px;
+    }
+    
+    .text_autumn {
+        margin-top: 10px;
+        padding-left: 25px;
+    }
+    
+    .winter {
+        height: 300px;
+        width: 120px;
+        margin-top: 5px;
+        margin-left: 40px;
+    }
+    
+    .text_winter {
+        margin-top: 10px;
+        padding-left: 70px;
+    }
+     
+    #contact {
+        background-color: rgb(222, 218, 218);
+        text-align: center;
+        grid-column: 1/11;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    #contact_1 {
+        margin-top: 40px;
+        font-size: 1em;
+        text-align: left;
+        margin-left: 30px;
+    }
+    
+    #contact_1 a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+    }
+    
+    #contact_2 {
+        margin-top: 80px;
+        margin-left: 150px;
+        margin-right: 200px;
+    }
+
+    #contact_2 i {
+        font-size: 2em;
+        padding-bottom: 10px;
+    }
+
+    #contact_3 {
+        display: inline;
+        text-align: left;
+        margin-right: 0px;
+        font-size: 1em;
+    }
+}
