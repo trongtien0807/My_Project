@@ -1,0 +1,188 @@
+body {
+    background-color: antiquewhite;
+}
+
+h1 {
+    font-size: 20px;
+}
+
+h2 {
+    color: rgb(48, 231, 170);
+    font-weight: bold
+}
+
+.photo {
+    height: 200px;
+    width: 200px;
+}
+
+.product-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.product-item {
+    width: 19%;
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.product-item-text {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around
+}
+
+.product-item button {
+    margin-top: 10px;
+    padding: 0px 15px;
+    height: 30px;
+    cursor: pointer;
+    border: none;
+    background-color: rgb(174, 208, 21);
+    font-weight: bold;
+    border-radius: 8px;
+    transition: all 0.5s ease;
+}
+
+.product-item button:hover {
+    background-color: tomato;
+}
+
+
+/*....................CART.............*/
+
+.cart {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    padding-top: 30px;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+}
+
+.photo-cart {
+    width: 100px;
+    height: 80px;
+    padding-right: 10px;
+}
+
+tr td:first-child {
+    display: flex;
+    align-items: center;
+}
+
+tr td:last-child {
+    cursor: pointer;
+    color: red;
+    font-weight: bold;
+}
+
+th {
+    padding: 20px;
+    background-color: rgb(195, 160, 228);
+}
+
+td {
+    padding:10px;
+    border-bottom: 1px solid slategrey  ;
+}
+
+.soluong {
+    width: 50px;
+    text-align: center;
+    outline: none;
+}
+
+.price-total p {
+    font-weight: bold;
+    text-align: right;
+}
+
+.price-total sup {
+    color: blue;
+    font-size: 1em;
+}
+
+.price-total span {
+    color: blue;
+    font-size: 1.2em;
+}
+
+
+/*....................CSS Cho Cart nằm bên phải.............*/
+
+.cart {
+    position: fixed;
+    height: 100vh;
+    width: 500px;
+    right: 0px;
+    top: 0px;
+    background-color: #ddd;
+    padding: 12px 20px;
+    overflow-y: scroll;   /*Giỏ hàng dài có thể kéo cuộn xuống*/
+    right: -100%;    /*Cho giỏ hàng không hiện*/
+    transition: all 1s ease;  /*Cho giỏ hàng hiện lên chậm*/
+}
+
+.cart button {
+    margin-top: 10px;
+    padding: 0px 25px;
+    height: 30px;
+    cursor: pointer;
+    border: none;
+    background-color: yellow;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: all 0.5s ease;
+}
+
+
+/*....................CSS Cho Cart icon.............*/
+
+.cart-icon i {
+    cursor: pointer;
+    font-size: larger;
+    color: tomato;
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: 30px;
+}
+
+.cart-icon sup {
+    color: blue;
+    font-size: 1em;
+    font-weight: bold;
+}
+ 
+.cart-icon span {
+    color: blue;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+
+/*....................CSS Cho X Cart.............*/
+
+.cart i {
+    cursor: pointer;
+    color: #aaa;
+    float: left;
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 15px;
+    margin-top: 0px;
+}
+
+.cart i:hover {
+    color: red;
+}
