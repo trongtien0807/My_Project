@@ -1,0 +1,433 @@
+@font-face {
+    font-family: JosefinSans;
+    src: url(./Josefin_Sans/JosefinSans-Italic-VariableFont_wght.ttf);
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    font-family: JosefinSans;
+}
+.video-container {
+    height: 100vh;
+    width: 100vw;;
+}
+.video-container video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+header {
+    position: relative;
+}
+.header-top i  {
+    position: fixed;
+    margin: 20px;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 1;
+    color: aqua;
+}
+.header-top ul {
+    position: fixed;
+    right: 0;
+    width: 300px;
+    height: 100vh;
+    padding: 150px 0 0 50px;
+    display:none;
+    opacity: 0;
+    z-index: 1;
+}
+.header-top ul.active {
+    display: block;
+    opacity: 1;
+}
+.header-top ul li {
+    margin-bottom: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    animation: fade 0.3s linear backwards;
+    animation-delay: calc(0.3s * var(--x));
+}
+@keyframes fade {
+    0% {
+        transform: translateY(-30px);
+        opacity: 0;
+    }
+}
+.header-top ul li a {
+    display: block;
+    padding: 12px;
+    transition: all 1s ease;
+    background-color: antiquewhite;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    color: white;
+}
+.header-top ul li a:hover {
+    color: tomato;
+    transition: all 2s ease;
+}
+.header-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 100vh;
+    background-color: rgb(255, 255, 255, 0.4);
+    padding: 150px 50px 0px 50px;
+    text-align: center;
+    width: 320px;
+}
+.header-content> h1 {
+    color: blueviolet;
+}
+.header-content> p {
+    color: rgb(239, 223, 100);
+    font-weight: bold;
+}
+form {
+    padding: 30px 12px;
+    background-color: #fff;
+    margin-top: 30px;
+}
+form h1 {
+    color: #333;
+    font-size: 27px;
+}
+form select,input {
+    width: 100%;
+    height: 40px;
+    padding: auto;
+    outline: none;
+    background-color: #dddd;
+    border: none;
+}
+form p {
+    text-align: left;
+    color: bisque;
+    margin: 20px 0 3px 0;
+    font-weight: bold;
+}
+.btn1 {
+    height: 40px;
+    width: 150px;
+    background-color: tomato;
+    color: #fff;
+    border-radius: 10px;
+    border: none;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: all 0.5s ease
+}
+.btn1:hover {
+    background-color: transparent;
+    border: 1px solid blueviolet;
+    color: blueviolet;
+}
+
+/* <!--------------------ĐỊA ĐIỂM--------------------------> */
+
+.nice-place {
+    padding: 50px 0;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+}
+.container {
+    max-width: 1512px;
+    margin: auto;
+}
+.nice-place-item {
+    width: 30%;
+    height: 400px;
+    position: relative;
+}
+.nice-place-item:hover .nice-place-text {
+    display: block;
+    animation: fade 1s linear backwards;
+}
+.nice-place-img img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    position: absolute;
+}
+.nice-place-text {
+    position: absolute;
+    width: 97%;
+    height: 200px;
+    margin-top: 375px;
+    padding: 12px;
+    background: linear-gradient(to right, rgba(0,0,0,0.8), rgba(255,255,255,0));
+    display: none;
+}
+.nice-place-text h2 {
+    color: tomato;
+    font-weight: bold;
+}
+.nice-place-text i {
+    color: yellow;
+}
+.nice-place-text p {
+    color: white;
+    margin: 12px 0;
+}
+.btn {
+    height: 25px;
+    width: 80px;
+    background-color: rgb(27, 222, 157);
+    color: #fff;
+    border-radius: 10px;
+    border: none;
+    margin-top: 0px;
+    cursor: pointer;
+    transition: all 0.5s ease
+}
+.btn:hover {
+    background-color: transparent;
+    border: 1px solid yellow;
+    color: yellow;
+}
+.h1-style  {
+    text-align: center;
+    color: blueviolet;
+    margin-bottom: 50px;
+    font-size: 25px;
+    position: relative;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.h1-style::before {
+    position: absolute;
+    content: "";
+    height: 5px;
+    width: 150px;
+    background-color: rgb(239, 223, 100);
+    border-radius: 10px;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.h1-style::after {
+    position: absolute;
+    content: "\2665";
+    width: 40px;
+    height: 20px;
+    color: red;
+    background-color: white;
+    bottom: -18px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* <!-------------------ABOUT--------------------------> */
+
+.about {
+    margin-top: 200px;
+}
+.about-content-left {
+    width: 50%;
+}
+.about-content-left img {
+    width: 100%;
+}
+.about-content-right {
+    width: 50%;
+    text-align: justify;
+}
+.about-content-right h2 {
+    font-family: JosefinSans;
+    font-size: 30px;
+}
+
+/* <!-------------------SERVICE--------------------------> */
+
+.service-photo {
+    width: 250px;
+    height: 250px;
+}
+.service {
+    margin-top: 30px;
+}
+.service-item {
+    width: 30%;
+    text-align: center;
+    padding: 20px;
+    cursor: pointer;
+}
+.service-item p {
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: tomato;
+    font-size: larger;
+}
+.service-item:hover .service-photo {
+    box-shadow: 2px 2px 10px black;
+    transition: all 1s ease;
+}
+
+/* <!-------------------TOUR VN--------------------------> */
+
+.tour-content-item-img {
+    width: 50%;
+    height: 300px;
+    
+}
+.tour-content-item-img img {
+    width: 85%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+.tour-content-item-text {
+    width: 50%;
+    padding: 55px 0;
+    text-align: justify;
+    line-height: 25px;
+}
+.tour-content-item-text h2 {
+    color: tomato;
+    font-weight: bold;
+}
+.tour-content-item-text p {
+    color: black;
+    margin: 12px 0;
+    padding-right: 20px;
+}
+.tour-content-item {
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+    margin-bottom: 25px;
+    cursor: pointer;
+}
+/* .tour-content-item:nth-child(even) {
+    flex-direction: row-reverse;  đổi so le giữa ảnh và text
+} */
+
+/* <!-------------------REVIEW-------------------------> */
+
+.review-item {
+    width: 30%;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+    padding: 20px 12px;
+}
+.review-item:hover {
+    box-shadow: 2px 2px 10px tomato;
+    transition: all 1s ease;
+}
+.review-item:hover .review-item-text img {
+    transform: translateY(-15px);
+    transition: all 1s ease;
+}
+.review-item-img img {
+    width: 50px;
+    height: 50%;
+    border-radius: 50%;
+    margin-top: 25px;
+    margin-left: 40px;
+}
+.review-item-text img {
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+}
+.review-item-text {
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 2px solid bisque;
+}
+.review-item-img-text {
+    width: 70%;
+}
+
+/* <!-------------------SIGN UP-------------------------> */
+.signup {
+    margin-top: 40px;
+}
+.signup-content {
+    align-items: center;
+    text-align: center;
+}
+.signup-content input {
+    height: 35px;
+    width: 50%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+/* <!-------------------CONTACT-------------------------> */
+
+.contact-content-item {
+    width: 45%;
+    padding: 10px 0;
+    text-align: center;
+}
+.contact-content-item input {
+    height: 35px;
+    width: 50%;
+    background-color: white;
+    border-radius: 10px;
+}
+.contact-content-bottom {
+    padding: 10px 10px;
+    text-align: center;
+}
+.contact-content-bottom textarea {
+    width: 100%;
+    height: 100px;
+    border: none;
+    outline: none;
+    padding: 10px;
+    background-color: #dddddd;
+}
+
+/* <!-------------------RESPONSIVE-------------------------> */
+@media (max-width: 575px) {
+    .header-content {
+        margin-top: -150px;
+    }
+    .nice-place-item {
+        width: 100%;
+        margin-bottom: 250px;
+    }
+    .about {
+        margin-top: -70px;
+    }
+    .about-content-left {
+        width: 100%;
+    }
+    .about-content-right {
+        width: 100%;
+        padding: 0 12px;
+    }
+    .service-item {
+        width: 100%;
+    }
+    .tour-content-item-img {
+        width: 100%;
+        margin-bottom: 20px;
+        margin-left: 40px;
+    }
+    .tour-content-item-text {
+        width: 100%;
+        text-align: center;
+        margin-top: -40px;
+        padding: 10px 10px;
+    }
+    .tour-content-item-text p {
+        text-align: justify;
+    }
+    .review-item {
+        width: 100%;
+    }
+    .contact-content-item {
+        width: 100%;
+    }
+    .h1-style {
+        font-size: 20px;
+    }
+    .contact {
+        margin-top: 50px;
+    }
+}
