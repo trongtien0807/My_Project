@@ -1,0 +1,83 @@
+<html>
+    <head>
+        <meta charset= "utf-8">
+        <meta name ="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title> MoniT - Shopping Cart </title>
+        <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+        <link rel = "stylesheet" href = "./style_cart.css">
+    </head>
+    <body>
+        <div id = "container">
+            <div class = "menu_cart">
+                <span id = "price">Price</span>
+                <span id = "quantity">Quantity</span>
+                <span id = "total">Total</span>
+            </div>
+            <div class = "product_cart">
+                <img class = "photo" src = "./Cut PSD to HTML/Cart/images/Cart_03.jpg" alt = "product1">
+                <div class = "detail_product"> T - Shirt   Size: M </div>
+                <div class = "price"> $300 </div>
+                <div class = "quantity"> 
+                    <input class = "button_quantity" type="number" value="1" min="1" style="background-color: rgb(231, 229, 226);">
+                </div>
+                <div class = "remove">
+                    <button id="delete">Remove</button>
+                </div>
+                <div class = "total"> $600 </div>
+            </div>
+            <div class = "product_cart">
+                <img class = "photo" src = "./Cut PSD to HTML/Cart/images/Cart_06.jpg" alt = "product1">
+                <div class = "detail_product"> Jeans   Size: 30 </div>
+                <div class = "price"> $400 </div>
+                <div class = "quantity"> 
+                    <input class = "button_quantity" type="number" value="2" min="1" style="background-color: rgb(231, 229, 226);">
+                </div>
+                <div class = "remove">
+                    <button id="delete">Remove</button>
+                </div>
+                <div class = "total"> $800 </div>
+            </div>
+            <script>
+                var product = document.getElementsByClassName("product_cart")[0];
+                var huybo = document.getElementById("delete");
+                huybo.onclick = function () {
+                    product.style.display = "none";
+                }
+            </script>
+            <!-- <div class = "grand_total"> Grand Total</div> -->
+            <div id = "contact">
+                <div id = "contact_1">
+                    <p> 
+                        FIND US ON <br>
+                        Address: HCM City <br>
+                        Phone Number: &nbsp; &nbsp;
+                        <a href = "tel: 0123456789"> 0123.456.789 </a> <br>
+                        Email Address: &nbsp; &nbsp;
+                        <a href = "mailto: fashion@monit.com"> fashion@monit.com </a>
+                    </p>
+                </div>
+                <div id = "contact_2">
+                    <a href = "#"> <i class="fa-brands fa-facebook"></i></a> &nbsp; &nbsp;
+                    <a href = "#"> <i class="fa-brands fa-instagram"></i></a> &nbsp; &nbsp;
+                    <a href = "#"> <i class="fa-brands fa-twitter"></i></a>
+                </div>
+                <div id = "contact_3">
+                    <p> 
+                        NEED HELP? <br>
+                        Contact Us <br>
+                        Shipping Services <br>
+                        Payment Options <br>
+                        Product Care <br>
+                        FAQs <br>
+                        Unsubscribe <br>
+                        Sitemap <br>
+                    </p>
+                </div>
+            </div>
+            <footer>
+                <p> “@2020 All Rights Reversed – Re-design by VU School” </p>
+            </footer>
+        </div>
+    </body>
+</html>
