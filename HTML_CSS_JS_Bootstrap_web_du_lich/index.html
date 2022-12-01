@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./jquery-3.5.1.js"></script>
+    <!-- <script>
+        $(document).ready(function(){
+            $("button").click(function(){     // Có thể dùng jQuery cho tính năng ẩn hiện menu
+                $(".menu").toggle(1000);
+            });
+        });
+    </script>     -->
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <i class="fa-solid fa-bars"></i>
+            <ul>
+                <li style="--x:1;"><a href="">Trang Chủ</a></li>
+                <li style="--x:2;"><a href="">Đặc Điểm</a></li>
+                <li style="--x:3;"><a href="">Về Chúng Tôi</a></li>
+                <li style="--x:4;"><a href="">Bộ Sưu Tập</a></li>
+                <li style="--x:5;"><a href="">Đánh Giá</a></li>
+                <li style="--x:6;"><a href="">Liên Hệ</a></li>
+            </ul>
+        </div>
+        <div class="video-container">
+            <video src="./cảnh-quan-thành-phố-amsterdam-night-to-day-time-lapse-amsterdam-hà-lan.mp4" autoplay muted loop>
+                <source src="video.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="header-content">
+            <h1>Khám Phá</h1>
+            <p>Choice Your Tour</p>
+            <form action="">
+                <h1 class="h1-style">Let's GO!</h1>
+                <p>Địa Điểm</p>
+                <select name="" id="">
+                    <option value="#">--Chọn Địa Điểm--</option>
+                    <option>Hà Lan</option>
+                    <option>Pháp</option>
+                    <option>Mỹ</option>
+                    <option>Thuỵ Sĩ</option>
+                    <option>Ý</option>
+                </select>
+                <p>Số người</p>
+                <input type="number" min="1" placeholder="Bạn đi bao nhiêu người?">
+                <p>Ngày đi</p>
+                <input type="date">
+                <p>Ngày về</p>
+                <input type="date"><br><br>
+                <button class="btn1">Search</button>
+            </form>
+        </div>
+    </header>
+    <!--------------------ĐỊA ĐIỂM-------------------------->
+    
+    <section class="nice-place">
+        <div class="container">
+            <h1 class="h1-style">Your Choice?</h1>
+            <div class="nice-place-content row">
+                <div class="nice-place-item">
+                    <div class="nice-place-img">
+                        <img src="./images/holand.jpeg" alt="">
+                    </div>
+                    <div class="nice-place-text">
+                        <h2>Hà Lan</h2>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <p>Hà Lan là một quốc gia thuộc Châu Âu và nổi tiếng với cối xay gió và hoa tulip. Đến đây, bạn sẽ được chiêm ngưỡng những công trình kiến trúc đặc sắc và chụp các bức ảnh check in tuyệt đẹp.</p>
+                        <button class="btn">CHOICE</button>
+                    </div>
+                </div>
+
+                <div class="nice-place-item">
+                    <div class="nice-place-img">
+                        <img src="./images/italy.jpeg" alt="">
+                    </div>
+                    <div class="nice-place-text">
+                        <h2>Ý</h2>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <p>Ý hay còn có tên gọi khác là Italia - Nổi tiếng thế giới với nhiều danh họa nổi tiếng, những công trình kiến trúc độc đáo, là "kinh đô" thời trang thế giới.</p>
+                        <button class="btn">CHOICE</button>
+                    </div>
+                </div>
+                
+                <div class="nice-place-item">
+                    <div class="nice-place-img">
+                        <img src="./images/paris.jpeg" alt="">
+                    </div>
+                    <div class="nice-place-text">
+                        <h2>Pháp</h2>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <p>Trong hơn 3 thập kỷ, Pháp là điểm đến hàng đầu thế giới, với khoảng 90 triệu lượt khách du lịch quốc tế đổ về mỗi năm. Họ đến để khám phá di sản kiến trúc,...</p>
+                        <button class="btn">CHOICE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--------------------ABOUT-------------------------->
+
+    <section class="about">
+        <div class="container">
+            <h1 class="h1-style">About</h1>
+            <div class="about-content row">
+                <div class="about-content-left">
+                    <img src="./images/about.jpg" alt="">
+                </div>
+                <div class="about-content-right">
+                    <h2>The reason why you should choose us!</h2>
+                    <p>Taking customer's trust as the motto and measure of service quality, Vietnam Booking always wants its brand to be associated with prestige and quality.</p>
+                    <button class="btn1">Learn More</button>
+                </div>
+            </div>
+            <div class="service row">
+                <div class="service-item">
+                    <img class="service-photo" src="./images/service1.jpeg" alt="">
+                    <p>Đặt phòng</p>
+                </div>
+                <div class="service-item">
+                    <img class="service-photo" src="./images/service2.jpeg" alt="">
+                    <p>Vé máy bay</p>
+                </div>
+                <div class="service-item">
+                    <img class="service-photo" src="./images/service3.jpeg" alt="">
+                    <p>Buffet</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--------------------TOUR VN-------------------------->
+
+    <section class="tour">
+        <div class="container">
+            <h1 class="h1-style">Tour Viet Nam</h1>
+            <div class="tour-content row">
+                <div class="tour-content-item row">
+                    <div class="tour-content-item-img">
+                        <img src="./images/hanoi.jpeg" alt="">
+                    </div>
+                    <div class="tour-content-item-text">
+                        <h2>Hà Nội</h2>
+                        <p>Hà Nội được ví như trái tim của Việt Nam, do đó du khách có thể di chuyển thuận lợi đến thủ đô bằng máy bay, tàu hỏa, xe khách, ôtô riêng hay xe máy từ các tỉnh thành khác.</p>
+                        <button class="btn">Choice</button>
+                    </div>
+                </div>
+                <div class="tour-content-item row">
+                    <div class="tour-content-item-img">
+                        <img src="./images/saigon.jpeg" alt="">
+                    </div>
+                    <div class="tour-content-item-text">
+                        <h2>Sài Gòn</h2>
+                        <p>Nếu như nhắc về Hà Nội, người ta nghĩ ngay đến một thủ đô nghìn năm văn hiến với vẻ đẹp cổ kính, pha chút mộng mơ và yên bình đến kỳ lạ thì khi nhắc về Sài Gòn, ai cũng háo hức trước sự hoa lệ, sầm uất trên mỗi góc phố.</p>
+                        <button class="btn">Choice</button>
+                    </div>
+                </div>
+                <div class="tour-content-item row">
+                    <div class="tour-content-item-img">
+                        <img src="./images/danang.jpeg" alt="">
+                    </div>
+                    <div class="tour-content-item-text">
+                        <h2>Đà Nẵng</h2>
+                        <p>Đà Nẵng còn có nhiều thắng cảnh đẹp mê hồn như đèo Hải Vân, rừng nguyên sinh ở bán đảo Sơn Trà và Ngũ Hành Sơn. Đặc biệt, Đà Nẵng được bao quanh bởi 3 di sản văn hóa thế giới là Huế, Hội An và Mỹ Sơn,...</p>
+                        <button class="btn">Choice</button>
+                    </div>
+                </div>
+                <div class="tour-content-item row">
+                    <div class="tour-content-item-img">
+                        <img src="./images/dalat.webp" alt="">
+                    </div>
+                    <div class="tour-content-item-text">
+                        <h2>Đà Lạt</h2>
+                        <p>Được ví như trái tim của Đà Lạt, núi Langbiang nổi tiếng với loại hình dã ngoại, khám phá thiên nhiên, thu hút các bạn trẻ mê phượt và những nhà mạo hiểm. Nơi đây là ngôi nhà chung của nhiều loại thảo dược, thảo mộc, và chim quý.</p>
+                        <button class="btn">Choice</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--------------------REVIEW-------------------------->
+
+    <section class="review">
+        <div class="container">
+            <h1 class="h1-style">Phản Hồi</h1>
+            <div class="review-content row">
+                <div class="review-item">
+                    <div class="review-item-text">
+                        <img src="./images/mes.png" alt="">
+                        <p>Rất hài lòng về dịch vụ, sẽ ủng hộ.</p>
+                    </div>
+                    <div class="review-item-img row">
+                        <img src="./images/adele.jpeg" alt="">
+                        <div class="review-item-img-text">
+                            <h4>Adele</h4>
+                            <p>18/07/2022</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-item">
+                    <div class="review-item-text">
+                        <img src="./images/mes.png" alt="">
+                        <p>Rất hài lòng về dịch vụ, sẽ ủng hộ.</p>
+                    </div>
+                    <div class="review-item-img row">
+                        <img src="./images/celine.jpeg" alt="">
+                        <div class="review-item-img-text">
+                            <h4>Celine</h4>
+                            <p>18/07/2022</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-item">
+                    <div class="review-item-text">
+                        <img src="./images/mes.png" alt="">
+                        <p>Rất hài lòng về dịch vụ, sẽ ủng hộ.</p>
+                    </div>
+                    <div class="review-item-img row">
+                        <img src="./images/mariah.jpeg" alt="">
+                        <div class="review-item-img-text">
+                            <h4>Mariah</h4>
+                            <p>18/07/2022</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--------------------SIGN UP-------------------------->
+    <section class="signup">
+        <h1 class="h1-style">Sign Up</h1>
+        <div class="signup-content">
+            <input type="email" placeholder="Enter your email" style="border: 1px solid black;">
+            <button class="btn1">Submit</button>
+        </div>
+    </section>
+
+    <!--------------------CONTACT-------------------------->
+
+    <section class="contact">
+        <div class="container">
+            <h1 class="h1-style">Contact</h1>
+            <div class="contact-content-top row">
+                <div class="contact-content-item">
+                    <input type="text" placeholder="Tên" style="border: 1px solid black;">
+                </div>
+                <div class="contact-content-item">
+                    <input type="text" placeholder="Địa chỉ" style="border: 1px solid black;">
+                </div>
+                <div class="contact-content-item">
+                    <input type="text" placeholder="Email" style="border: 1px solid black;">
+                </div>
+                <div class="contact-content-item">
+                    <input type="text" placeholder="Số điện thoại" style="border: 1px solid black;">
+                </div>
+            </div>
+            <div class="contact-content-bottom">
+                <textarea placeholder="Nội dung"></textarea>
+                <button class="btn1">Submit</button>
+            </div>
+        </div>
+    </section>
+    <script src="./js.js"></script>
+</body>
+</html>
